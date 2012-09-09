@@ -1,3 +1,7 @@
+// exercise3.cpp : Defines the entry point for the console application.
+//
+
+
 #include "stdafx.h"
 #include <Windows.h>
 #include <iostream>
@@ -8,16 +12,20 @@ using namespace std;
 
 void main()                               // define main program
 {
-  string x="I'm a string."; 
-  int a;
+  string x="This is a test!"; 
+  
+  int s = x.size();  cout << "Size of input string is: " << s << '\n';
+
   char y[100];
-  y[0] = 'a';
-  y[1] = 'b';
-  y[2] = 'c';
-  y[3] = '\0';
-  cout << "Array: " << y << '\n';
-  cout << "String: " << x << '\n';
-  cout << x.size();
+
+  int i=0;
+
+  for (i=0; i<s; i++) y[i] = x[(s-1)-i];
+
+  y[s] = '\0'; 
+  cout << y;
+
+  int a;
   cout << "\nEnter any number to exit:";       // tell user how to get out. 
   cin >> a;                              // wait for input before exit.
-}      
+}                
