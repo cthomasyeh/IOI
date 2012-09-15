@@ -13,7 +13,14 @@ void main()                               // define main program
 {
    
   int index, a;
-  for (index=1; index <=128; index++) cout << (char) index << ' ';
-   cout << "Enter any number to exit:";       // tell user how to get out. 
+  //cout << (char) 64 << '\n';
+  //cout << (char) 65 << '\n';
+  //cout << (char) 66 << '\n';
+  //cout << (char) 67 << '\n';
+
+  for (index=1; index <=10; index++) cout << index << '\n';
+   
+  
+  cout << "Enter any number to exit:";       // tell user how to get out. 
    cin >> a;                              // wait for input before exit.
 }                
