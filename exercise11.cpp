@@ -4,17 +4,22 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
+#include <sstream>
+
 using namespace std;
 
 int main ()
 {
   string mystr;
   string age;
+  int x=0;
   cout << "What's your full name? ";
   getline (cin, mystr);
   cout << "How old are you? ";
   getline (cin, age);
-  cout << mystr << " is " <<  age << " years old.\n";
+  stringstream(age) >> x; 
+  cout << mystr << " is " <<  x << " years old.\n";
+  cout << mystr << " will be " << (x+38) << " years old by 2050\n";
   cout << "Hello " << mystr << ".\n";
   cout << "What is your favorite team? ";
   getline (cin, mystr);

@@ -6,7 +6,7 @@ using namespace std;
 
 int main () {
   string line;
-  ifstream myfile ("output.txt");
+  ifstream myfile ("us-const.txt");
   if (myfile.is_open())
   {
     while ( myfile.good() )

@@ -8,21 +8,26 @@ using namespace std;
 int main () {
   long begin,end;
   long i=0;
-  ifstream myfile ("output.txt");
+  char s[10];
+  ifstream myfile ("us-const.txt");
   begin = myfile.tellg();
 
   myfile.seekg (0, ios::end);
   end = myfile.tellg();
 
-  cout << "size is: " << (end-begin) << " bytes.\n";
-  myfile.seekg (begin);
-  for (i=begin; i< (end-3); i++) {
-	  char s[10];
-	  myfile.read(s, 3);
-	  if ( (s[0]=='R') && (s[1]=='e') && (s[2]=='a') ) {
-		  cout << "end token found\n";
-		  break;
+  cout << "size is: " << end << " bytes.\n";
+  myfile.seekg (0);
+  for (i=begin; i< (end-5); i++) {
+	  myfile.read(s, 5);
+	  
+	  //for (int j=0; j<3 ; j++) cout << s[j];
+	  //cout << '\n';
+	  if ( (s[0]=='S') && (s[1]=='t') && (s[2]=='a') && (s[3]=='t') && (s[4]=='e')  ) {
+		  cout << "State token found at: " << i <<'\n';
+		  cout << "use tellg: " << myfile.tellg() << '\n';
+		  //break;
 	  }
+	  myfile.seekg(i+1);
   }
   myfile.close();
   int a;
