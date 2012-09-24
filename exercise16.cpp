@@ -1,5 +1,7 @@
 #include "stdafx.h"
 #include <iostream>
+#include <limits.h>
+
 using namespace std;
 
 int main () {
@@ -7,10 +9,14 @@ int main () {
   int y=2;
   int z=0;
 
+
+  int max=INT_MAX;
+  cout << "The largest integer in my system is: " << max << '\n';
+
   z= x + y;
 
   if (x==1) {
-   int y = 100;
+   x = 100;
    int z = x + y;
    cout << "z equal to: " << z << '\n';
   }
@@ -19,6 +25,7 @@ int main () {
 	int y = 20;
   }
 
+  z=x;
   cout << "z equal to: " << z << '\n';
   cout << "y is equal to: " << y << '\n';
 
