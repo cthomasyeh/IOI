@@ -10,7 +10,7 @@ int main () {
   int answer=0;
   long i=0;
   char s[10];
-  ifstream myfile ("us-const.txt");
+  ifstream myfile ("c:\\us-const.txt");
   begin = myfile.tellg();
 
   myfile.seekg (0, ios::end);
