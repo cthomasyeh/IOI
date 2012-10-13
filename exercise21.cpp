@@ -21,7 +21,7 @@ void main () {
 	int index, a;
 	int selection = 0;
 	int answer;
-	int x[4] = { 1, 2, 3, 4}, y=4;
+	int x[5] = { 1, 24, 3, 46, 90}, y=5;
 
 	
 
@@ -44,7 +44,7 @@ void main () {
 			break;
 		case 3:
 			cout << "calling Jeffrey... Jeffrey is working hard... \n";
-			answer = jeffrey(10, 20);
+			answer = jeffrey(10, 200);
 			cout << "\nJeffrey finishes his works... \n";
 			cout << "Jeffrey said: the largest number is " << x << " is: " << answer << '\n';
 			break;			
@@ -53,7 +53,7 @@ void main () {
 			cout << "Darren said: the average value is: " << answer << '\n'; 
 			break;
 		case 5:
-			answer = phillip(10, 12);
+			answer = phillip(100, 12);
 			cout << "Phllip said: " << answer << '\n';
 			break;
 		case 6:
