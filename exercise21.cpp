@@ -32,7 +32,7 @@ void main () {
 		switch (selection) {
 		case 1: 
 			cout << "calling Sean... Sean is working hard... \n";
-			answer = sean(x, y);
+			//answer = sean(x, y);
 			cout << "\nSean finishes his works... \n";
 			cout << "Sean said: the largest number in the input array is: " <<  answer << '\n';
 			break;
@@ -49,7 +49,7 @@ void main () {
 			cout << "Jeffrey said: the largest number is " << x << " is: " << answer << '\n';
 			break;			
 		case 4:
-			answer = darren(x, y);
+			//answer = darren(x, y);
 			cout << "Darren said: the average value is: " << answer << '\n'; 
 			break;
 		case 5:
@@ -57,12 +57,12 @@ void main () {
 			cout << "Phllip said: " << answer << '\n';
 			break;
 		case 6:
-			answer = eaman(10, 20);
-			cout << "Eric said: " << answer << '\n';
+			//answer = eaman(10, 20);
+			//cout << "Eric said: " << answer << '\n';
 			break;
 		case 7: 
-			answer = kevin(10, 20);
-			cout << "Kevin said: the smaller of the two is: " << answer << '\n';
+			//answer = kevin(10, 20);
+			//cout << "Kevin said: the smaller of the two is: " << answer << '\n';
 			break;
 		case 8: 
 			break;
