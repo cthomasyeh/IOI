@@ -1,11 +1,11 @@
 #include "stdAfx.h"
 
-int alex(int a, int b) {
-	return (a + b);
+int sean(int a[], int b) {
+	return (b);
 }
 
-int eaman(int a) {
-	return (a * 2);
+int eric(int a[], int b) {
+	return (b);
 }
 
 int jeffrey(int a) {
