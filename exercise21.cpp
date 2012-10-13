@@ -10,7 +10,11 @@ int alex(int a, int b) {
 */
 extern int sean(int[], int);
 extern int eric(int[], int);
-//extern int jeffrey(int);
+extern int jeffrey(int, int);
+extern int phillip(int, int);
+extern int eaman(int, int);
+extern int darren(int[], int);
+extern int kevin(int, int);
 
 void main () {
 
@@ -23,7 +27,7 @@ void main () {
 
 	for (;;) {
 		cout << "\nEnter a number to select the function call: \n";
-		cout << "1: Alex\n2: Eaman\n3: Jeffrey\n4: Daren\n";
+		cout << "1: Sean\n2: Eric\n3: Jeffrey\n4: Daren\n5: Phillip\n6: Eaman\n7: Kevin\n";
 		cin >> selection;
 		switch (selection) {
 		case 1: 
@@ -40,18 +44,25 @@ void main () {
 			break;
 		case 3:
 			cout << "calling Jeffrey... Jeffrey is working hard... \n";
-			answer = jeffrey(x);
+			answer = jeffrey(10, 20);
 			cout << "\nJeffrey finishes his works... \n";
-			cout << "Jeffrey said: doubling " << x << " is: " << answer << '\n';
-			break;
-			break;
+			cout << "Jeffrey said: the largest number is " << x << " is: " << answer << '\n';
+			break;			
 		case 4:
+			answer = darren(x, y);
+			cout << "Darren said: the average value is: " << answer << '\n'; 
 			break;
 		case 5:
+			answer = phillip(10, 12);
+			cout << "Phllip said: " << answer << '\n';
 			break;
 		case 6:
+			answer = eaman(10, 20);
+			cout << "Eric said: " << answer << '\n';
 			break;
 		case 7: 
+			answer = kevin(10, 20);
+			cout << "Kevin said: the smaller of the two is: " << answer << '\n';
 			break;
 		case 8: 
 			break;
