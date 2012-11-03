@@ -4,7 +4,7 @@
 using namespace std;
 
 
-float Daren (int a[], int b) {
+float Darren (int a[], int b) {
 	float c=0;
 	for (int i=0; i<b; i++)
 		c += a[i];

@@ -13,7 +13,7 @@ extern int eric(int[], int);
 extern int jeffrey(int, int);
 extern int phillip(int, int);
 extern int eaman(int, int);
-extern int darren(int[], int);
+extern float Darren(int[], int);
 extern int kevin(int, int);
 
 void main () {
@@ -21,6 +21,7 @@ void main () {
 	int index, a;
 	int selection = 0;
 	int answer;
+	float d_answer;
 	int x[5] = { 1, 24, 3, 46, 90}, y=5;
 
 	
@@ -49,8 +50,8 @@ void main () {
 			cout << "Jeffrey said: the largest number is " << x << " is: " << answer << '\n';
 			break;			
 		case 4:
-			//answer = darren(x, y);
-			cout << "Darren said: the average value is: " << answer << '\n'; 
+			d_answer = Darren(x, y);
+			cout << "Darren said: the average value is: " << d_answer << '\n'; 
 			break;
 		case 5:
 			answer = phillip(100, 12);
