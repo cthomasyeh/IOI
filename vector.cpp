@@ -1,56 +1,35 @@
 // vector.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-
-
 #include <iostream>
 #include <vector>
-#include <string>
-#include <Windows.h>
-
 using namespace std;
 
-void main()
-{
-   vector<string> SS;
+void print( const vector<int>& );
 
-   SS.push_back("The number is 10");
-   SS.push_back("The number is 20");
-   SS.push_back("The number is 30");
+void print_backwards( const vector<int> &);
 
-   cout << "Loop by index:" << endl;
+int main() {
+	vector<int> v;
+	int number;
+	cout <<"Input some numbers and then end the input using a non-numerical key stroke\n";
+	while(cin>>number){
+		v.push_back(number);
+	}//while(more)
+	print(v);
+	print_backwards(v);
+}//main
 
-   int ii;
-   for(ii=0; ii < SS.size(); ii++)
-   {
-      cout << SS[ii] << endl;
-   }
+void print_backwards( const vector<int> &a) {
+ 		for(int i=a.size()-1; i>=0; --i)
+ 			cout << a[i] << " ";
+ 		cout << endl;
+ 		cout << "----------------"<<endl;
+}//print_backwards
 
-   cout << endl << "Constant Iterator:" << endl;
-
-   vector<string>::const_iterator cii;
-   for(cii=SS.begin(); cii!=SS.end(); cii++)
-   {
-      cout << *cii << endl;
-   }
-
-   cout << endl << "Reverse Iterator:" << endl;
-
-   vector<string>::reverse_iterator rii;
-   for(rii=SS.rbegin(); rii!=SS.rend(); ++rii)
-   {
-      cout << *rii << endl;
-   }
-
-   cout << endl << "Sample Output:" << endl;
-
-   cout << SS.size() << endl;
-   cout << SS[2] << endl;
-
-   swap(SS[0], SS[2]);
-   cout << SS[2] << endl;
-
-   Sleep(50000);
-}
-                
+void print( const vector<int>& a) {
+ 		for(int i=0; i<a.size(); ++i)
+ 			cout << a[i] << " ";
+ 		cout << endl;
+ 		cout << "----------------"<<endl;
+}//print
