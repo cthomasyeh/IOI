@@ -1,8 +1,9 @@
 // vector.cpp : Defines the entry point for the console application.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <vector>
+#include <Windows.h>
 using namespace std;
 
 
@@ -15,7 +16,14 @@ struct triangle {
 	float area;
 };
 
-void area( vector<triangle> );
+void area( vector<triangle> a) {
+ 		for(int i=0; i<a.size(); ++i) {
+			a[i].area = (a[i].base * a[i].height)/2;
+ 			cout << a[i].area << " ";
+		}
+ 		cout << endl;
+ 		cout << "----------------"<<endl;
+}//print
 
 int main() {
 	vector<triangle> v;
@@ -29,15 +37,7 @@ int main() {
 	v.push_back(t1);
 
 	area(v);
-	
+	Sleep (15000);
 }//main
 
 
-void area( vector<triangle> a) {
- 		for(int i=0; i<a.size(); ++i) {
-			a[i].area = (a[i].base * a[i].height)/2;
- 			cout << a[i].area << " ";
-		}
- 		cout << endl;
- 		cout << "----------------"<<endl;
-}//print
