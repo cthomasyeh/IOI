@@ -87,8 +87,8 @@ int main()
 			//cout << tmpStr << "'s ID is: " << fid << '\n';
 			p[id].f[k] = fid;
 		}
-		//cout << p[id].name << "'s friends: ";
-		//for (int l=0; l<noFriends; l++) cout << p[id].f[l] << " ";
+		cout << p[id].name << "'s friends: ";
+		for (int l=0; l<noFriends; l++) cout << p[id].f[l] << " ";
 
 	}
 
